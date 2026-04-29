@@ -4,12 +4,20 @@
 	"sid": 437691623082060,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "moveDir",
+			"type": "number",
+			"desc": "1 = move right; -1 = move left",
+			"show": true,
+			"sid": 298036965039746
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
-			"sid": 729296309502542
+			"sid": 344124724167502
 		}
 	],
 	"effectTypes": [],

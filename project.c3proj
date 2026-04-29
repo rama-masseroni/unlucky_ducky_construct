@@ -48,7 +48,6 @@
 			"Walls",
 			"Destructibles",
 			"Mouse",
-			"Sprite",
 			"Sprite2"
 		],
 		"subfolders": []
