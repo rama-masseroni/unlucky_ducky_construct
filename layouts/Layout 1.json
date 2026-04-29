@@ -1,0 +1,112 @@
+{
+	"name": "Layout 1",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 2,
+					"sid": 709785095320149,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 32,
+							"height": 16,
+							"max-width": 148,
+							"max-height": 81,
+							"data": "103,47,1,13x45,65x0,4,48,13x91,46,65x0,5,49,13x91,46,65x0,4,48,3x91,267,311,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,269,313,8x91,46,65x0,5,49,3x91,270,314,8x91,46,65x0,4,48,3x91,271,315,0,7x91,46,65x0,5,49,3x91,268,312,0,7x91,46,65x0,4,48,3x91,269,313,0,7x91,46,65x0,5,49,3x91,270,314,0,7x91,46,65x0,4,48,3x91,271,315,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,269,313,8x91,46,65x0,5,49,3x91,270,314,8x91,46,65x0,4,48,3x91,271,315,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,269,313,8x91,46,65x0,5,49,3x91,270,314,8x91,46,65x0,4,48,3x91,268,312,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,268,312,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,268,312,8x91,46,65x0,5,49,3x91,268,312,8x91,46,65x0,4,48,3x91,269,313,8x91,46,65x0,5,49,3x91,270,314,8x91,46,65x0,4,48,3x91,271,315,8x91,46,65x0,5,49,3x91,272,316,8x91,46,65x0,4,48,13x91,46,8x0,1,56x0,5,49,13x91,46,65x0,8,52,2,13x46,9461x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 709785095320149,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1024,
+						"height": 512,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0
+					}
+				}
+			],
+			"sid": 553474094124064,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"sampling": "auto",
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 391367772189281,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 3840,
+	"height": 2160,
+	"unboundedScrolling": false,
+	"sampling": "auto",
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Event sheet 1"
+}
