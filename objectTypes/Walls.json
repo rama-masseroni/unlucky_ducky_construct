@@ -1,11 +1,17 @@
 {
-	"name": "Tilemap",
+	"name": "Walls",
 	"plugin-id": "Tilemap",
 	"sid": 957300065056825,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 624090654935638
+		}
+	],
 	"effectTypes": [],
 	"image": {
 		"width": 1408,

@@ -1,5 +1,33 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 812410099887062,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Destructibles"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "erase-tile",
+					"objectClass": "Destructibles",
+					"sid": 540587749766524,
+					"parameters": {
+						"tile-x": "Destructibles.PositionToTileX(Mouse.X(\"Game\"))\n",
+						"tile-y": "Destructibles.PositionToTileY(Mouse.Y(\"Game\"))\n"
+					}
+				}
+			],
+			"sid": 753798082011507
+		}
+	],
 	"sid": 656718061665362
 }
