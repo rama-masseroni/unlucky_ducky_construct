@@ -22,22 +22,29 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Tilemap",
+			"name": "Mapa de teselas",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -45,10 +52,13 @@
 	"uniqueId": "ioclvcrhsxw",
 	"objectTypes": {
 		"items": [
-			"Walls",
-			"Destructibles",
+			"Wall",
 			"Mouse",
-			"Sprite2"
+			"Sprite2",
+			"tile_0000",
+			"ChatGPTImage2May202612_49_51Pm",
+			"Comenzar",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -61,13 +71,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Menu de Inicio",
+			"Nivel 1",
+			"Nivel 2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Nivel 2",
+			"Menu de Inicio",
+			"Nivel 1"
 		],
 		"subfolders": []
 	},

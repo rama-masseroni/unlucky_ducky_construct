@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Nivel 1",
 	"events": [
 		{
 			"eventType": "block",
@@ -7,28 +7,28 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 812410099887062,
+					"sid": 921700436450170,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Destructibles"
+						"object-clicked": "Wall"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "erase-tile-range",
-					"objectClass": "Destructibles",
-					"sid": 518336580457490,
+					"objectClass": "Wall",
+					"sid": 846889702439242,
 					"parameters": {
-						"tile-x": "Destructibles.PositionToTileX(Mouse.X(\"Game\"))\n",
-						"tile-y": "Destructibles.PositionToTileY(Mouse.Y(\"Game\"))\n",
+						"tile-x": "Wall.PositionToTileX(Mouse.X(\"game\"))",
+						"tile-y": "Wall.PositionToTileY(Mouse.Y(\"game\"))",
 						"width": "2",
 						"height": "2"
 					}
 				}
 			],
-			"sid": 753798082011507
+			"sid": 289542549988122
 		},
 		{
 			"eventType": "block",
@@ -36,14 +36,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 296358678758744
+					"sid": 610200721399236
 				}
 			],
 			"actions": [
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Sprite2",
-					"sid": 195938368459960,
+					"sid": 297858497338363,
 					"parameters": {
 						"instance-variable": "moveDir",
 						"value": "1"
@@ -52,14 +52,14 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "Sprite2",
-					"sid": 760462947674702,
+					"sid": 772207193850169,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "150 *(Sprite2.moveDir)"
 					}
 				}
 			],
-			"sid": 954625811067120
+			"sid": 312357704313871
 		},
 		{
 			"eventType": "block",
@@ -67,7 +67,7 @@
 				{
 					"id": "is-by-wall",
 					"objectClass": "Sprite2",
-					"sid": 611705371316664,
+					"sid": 286389790315135,
 					"behaviorType": "Platform",
 					"parameters": {
 						"side": "right"
@@ -78,7 +78,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Sprite2",
-					"sid": 830952065152522,
+					"sid": 753963318248410,
 					"parameters": {
 						"instance-variable": "moveDir",
 						"value": "-1"
@@ -87,14 +87,14 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "Sprite2",
-					"sid": 122523725696753,
+					"sid": 172022494275042,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "150 * (Sprite2.moveDir)"
 					}
 				}
 			],
-			"sid": 393778236274108
+			"sid": 400034897239561
 		},
 		{
 			"eventType": "block",
@@ -102,7 +102,7 @@
 				{
 					"id": "is-by-wall",
 					"objectClass": "Sprite2",
-					"sid": 910880659158005,
+					"sid": 372615742945815,
 					"behaviorType": "Platform",
 					"parameters": {
 						"side": "left"
@@ -113,7 +113,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Sprite2",
-					"sid": 147068846989277,
+					"sid": 646873985001122,
 					"parameters": {
 						"instance-variable": "moveDir",
 						"value": "1"
@@ -122,14 +122,14 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "Sprite2",
-					"sid": 912535137222794,
+					"sid": 350133942919278,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "150 * (Sprite2.moveDir)"
 					}
 				}
 			],
-			"sid": 781203217472229
+			"sid": 371297199650012
 		},
 		{
 			"eventType": "block",
@@ -137,7 +137,7 @@
 				{
 					"id": "is-falling",
 					"objectClass": "Sprite2",
-					"sid": 870301519347521,
+					"sid": 734363577233307,
 					"behaviorType": "Platform"
 				}
 			],
@@ -145,14 +145,14 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "Sprite2",
-					"sid": 795093806093334,
+					"sid": 317636832070494,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "0"
 					}
 				}
 			],
-			"sid": 663462144660649
+			"sid": 631796392669171
 		},
 		{
 			"eventType": "block",
@@ -160,7 +160,7 @@
 				{
 					"id": "is-on-floor",
 					"objectClass": "Sprite2",
-					"sid": 100749872895809,
+					"sid": 159488561423340,
 					"behaviorType": "Platform"
 				}
 			],
@@ -168,15 +168,39 @@
 				{
 					"id": "set-vector-x",
 					"objectClass": "Sprite2",
-					"sid": 118197786521914,
+					"sid": 345369059359731,
 					"behaviorType": "Platform",
 					"parameters": {
 						"vector-x": "150 * (Sprite2.moveDir)"
 					}
 				}
 			],
-			"sid": 991163366672295
+			"sid": 604211687796384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 353030882490471,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 800717060296473,
+					"parameters": {
+						"layout": "Nivel 2"
+					}
+				}
+			],
+			"sid": 464224182064865
 		}
 	],
-	"sid": 656718061665362
+	"sid": 508925977666298
 }

@@ -1,0 +1,206 @@
+{
+	"name": "Nivel 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 812410099887062,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Wall"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "erase-tile-range",
+					"objectClass": "Wall",
+					"sid": 518336580457490,
+					"parameters": {
+						"tile-x": "Wall.PositionToTileX(Mouse.X(\"Game\"))\n",
+						"tile-y": "Wall.PositionToTileY(Mouse.Y(\"Game\"))\n",
+						"width": "2",
+						"height": "2"
+					}
+				}
+			],
+			"sid": 753798082011507
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 296358678758744
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Sprite2",
+					"sid": 195938368459960,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Sprite2",
+					"sid": 760462947674702,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 *(Sprite2.moveDir)"
+					}
+				}
+			],
+			"sid": 954625811067120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "Sprite2",
+					"sid": 611705371316664,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Sprite2",
+					"sid": 830952065152522,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Sprite2",
+					"sid": 122523725696753,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 * (Sprite2.moveDir)"
+					}
+				}
+			],
+			"sid": 393778236274108
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "Sprite2",
+					"sid": 910880659158005,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Sprite2",
+					"sid": 147068846989277,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Sprite2",
+					"sid": 912535137222794,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 * (Sprite2.moveDir)"
+					}
+				}
+			],
+			"sid": 781203217472229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Sprite2",
+					"sid": 870301519347521,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Sprite2",
+					"sid": 795093806093334,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "0"
+					}
+				}
+			],
+			"sid": 663462144660649
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Sprite2",
+					"sid": 100749872895809,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Sprite2",
+					"sid": 118197786521914,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 * (Sprite2.moveDir)"
+					}
+				}
+			],
+			"sid": 991163366672295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 317607491263108,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 392345976965275,
+					"parameters": {
+						"layout": "Menu de Inicio"
+					}
+				}
+			],
+			"sid": 586982734754285
+		}
+	],
+	"sid": 656718061665362
+}
