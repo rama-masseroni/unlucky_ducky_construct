@@ -200,6 +200,27 @@
 				}
 			],
 			"sid": 464224182064865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 226180701135949,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 119901091605745
+				}
+			],
+			"sid": 365391358695116
 		}
 	],
 	"sid": 508925977666298
