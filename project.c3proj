@@ -54,12 +54,12 @@
 		"items": [
 			"Wall",
 			"Mouse",
-			"Sprite2",
-			"tile_0000",
+			"Player",
+			"Bomb",
 			"ChatGPTImage2May202612_49_51Pm",
 			"Comenzar",
 			"Sprite",
-			"Sprite3"
+			"Rat"
 		],
 		"subfolders": []
 	},
@@ -80,9 +80,11 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Nivel 2",
-			"Menu de Inicio",
-			"Nivel 1"
+			"Eventsheet_Nivel 2",
+			"Eventsheet_Menu de Inicio",
+			"Eventsheet_Nivel 1",
+			"Common_movement",
+			"Bomb"
 		],
 		"subfolders": []
 	},

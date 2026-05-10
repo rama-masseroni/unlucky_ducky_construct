@@ -1,0 +1,92 @@
+{
+	"name": "Rat",
+	"plugin-id": "Sprite",
+	"sid": 314222618891515,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "moveDir",
+			"type": "number",
+			"desc": "1 = move right; -1 = move left",
+			"show": true,
+			"sid": 721023715232106
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 508262910676381
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8611450,
+						"collisionPoly": {
+							"points": [
+								0.35,
+								0,
+								0.65,
+								0,
+								0.8,
+								0.075,
+								0.925,
+								0.2,
+								1,
+								0.35,
+								1,
+								0.65,
+								0.925,
+								0.8,
+								0.8,
+								0.925,
+								0.65,
+								1,
+								0.35,
+								1,
+								0.275,
+								0.975,
+								0.225,
+								0.95,
+								0.075,
+								0.8,
+								0,
+								0.65,
+								0,
+								0.35,
+								0.075,
+								0.2,
+								0.2,
+								0.075
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 894988633773816,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

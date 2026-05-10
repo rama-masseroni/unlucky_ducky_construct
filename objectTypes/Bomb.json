@@ -1,10 +1,18 @@
 {
-	"name": "Sprite3",
+	"name": "Bomb",
 	"plugin-id": "Sprite",
-	"sid": 845005409363435,
+	"sid": 605767011568669,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "time_to_detonate",
+			"type": "number",
+			"desc": "seconds",
+			"show": true,
+			"sid": 695018936106015
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -12,21 +20,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6054895,
+						"imageSpriteId": 6082638,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 991172597311156,
+				"sid": 428361973484141,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

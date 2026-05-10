@@ -71,7 +71,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -162,7 +162,61 @@
 					}
 				},
 				{
-					"type": "Sprite3",
+					"type": "Rat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"sid": 957027400748218,
+					"tags": "",
+					"instanceVariables": {
+						"moveDir": 0
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 957027400748218,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1395,
+						"y": 193,
+						"width": 78.6061653026153,
+						"height": 78.6061653026153,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Bomb",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -171,21 +225,23 @@
 						"live-preview": false
 					},
 					"uid": 12,
-					"sid": 965225232085612,
+					"sid": 904767677548599,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"time_to_detonate": 3
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 965225232085612,
+						"sid": 904767677548599,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1167,
-						"y": 198,
-						"width": 93.888231424391,
-						"height": 93.888231424391,
+						"x": 707,
+						"y": 225,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -244,5 +300,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Nivel 1"
+	"eventSheet": "Eventsheet_Nivel 1"
 }

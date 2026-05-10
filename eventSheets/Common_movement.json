@@ -1,0 +1,258 @@
+{
+	"name": "Common_movement",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player movement2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "Player",
+							"sid": 698308225866157,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 505582873294956,
+							"parameters": {
+								"instance-variable": "moveDir",
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Player",
+							"sid": 874645770725333,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (PLayer.moveDir)"
+							}
+						}
+					],
+					"sid": 243567199630183
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "Player",
+							"sid": 450932141569769,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 602622469479219,
+							"parameters": {
+								"instance-variable": "moveDir",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Player",
+							"sid": 500676737398270,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (PLayer.moveDir)"
+							}
+						}
+					],
+					"sid": 938059978316654
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Player",
+							"sid": 478561479207662,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Player",
+							"sid": 652622558823866,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
+							}
+						}
+					],
+					"sid": 830280588109459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "Player",
+							"sid": 978377083045986,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Player",
+							"sid": 806106259665823,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (PLayer.moveDir)"
+							}
+						}
+					],
+					"sid": 561029726249197
+				}
+			],
+			"sid": 817478191786482
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rat movement2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "Rat",
+							"sid": 568321484786475,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Rat",
+							"sid": 339351786349537,
+							"parameters": {
+								"instance-variable": "moveDir",
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Rat",
+							"sid": 866373419118290,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (Rat.moveDir)"
+							}
+						}
+					],
+					"sid": 768900067682701
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "Rat",
+							"sid": 131314768395471,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Rat",
+							"sid": 170790955775204,
+							"parameters": {
+								"instance-variable": "moveDir",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Rat",
+							"sid": 949594073994262,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (Rat.moveDir)"
+							}
+						}
+					],
+					"sid": 126301443661144
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Rat",
+							"sid": 290824637176518,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Rat",
+							"sid": 897578234039562,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
+							}
+						}
+					],
+					"sid": 855812209032253
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "Rat",
+							"sid": 598036224945567,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-vector-x",
+							"objectClass": "Rat",
+							"sid": 176608392211948,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "150 * (Rat.moveDir)"
+							}
+						}
+					],
+					"sid": 886156466548222
+				}
+			],
+			"sid": 455392107274736
+		}
+	],
+	"sid": 376569402051212
+}

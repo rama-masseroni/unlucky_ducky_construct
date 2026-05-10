@@ -1,0 +1,108 @@
+{
+	"name": "Eventsheet_Nivel 2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Common_movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Bomb"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 296358678758744
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 195938368459960,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Player",
+					"sid": 760462947674702,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 *(PLayer.moveDir)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rat",
+					"sid": 668603841571818,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Rat",
+					"sid": 135662435931379,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 *(Rat.moveDir)"
+					}
+				}
+			],
+			"sid": 954625811067120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 317607491263108,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 392345976965275,
+					"parameters": {
+						"layout": "Menu de Inicio"
+					}
+				}
+			],
+			"sid": 586982734754285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 654255673579806,
+					"parameters": {
+						"object": "Rat"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 702802136898718
+				}
+			],
+			"sid": 685617166413759
+		}
+	],
+	"sid": 656718061665362
+}

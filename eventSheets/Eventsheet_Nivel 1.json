@@ -1,0 +1,108 @@
+{
+	"name": "Eventsheet_Nivel 1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Common_movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Bomb"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 351028766433298
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 645556689457708,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Player",
+					"sid": 650677866431484,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 *(PLayer.moveDir)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rat",
+					"sid": 693480544266320,
+					"parameters": {
+						"instance-variable": "moveDir",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Rat",
+					"sid": 256348526013814,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "150 *(Rat.moveDir)"
+					}
+				}
+			],
+			"sid": 461624318886486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 353030882490471,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 800717060296473,
+					"parameters": {
+						"layout": "Nivel 2"
+					}
+				}
+			],
+			"sid": 464224182064865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 828175746771068,
+					"parameters": {
+						"object": "Rat"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 119901091605745
+				}
+			],
+			"sid": 365391358695116
+		}
+	],
+	"sid": 508925977666298
+}

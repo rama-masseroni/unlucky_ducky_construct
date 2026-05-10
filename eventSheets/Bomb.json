@@ -1,0 +1,74 @@
+{
+	"name": "Bomb",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 855037803975842
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 392293729201211,
+					"parameters": {
+						"seconds": "Bomb.time_to_detonate",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "erase-tile-range",
+					"objectClass": "Wall",
+					"sid": 383457947033791,
+					"parameters": {
+						"tile-x": "Wall.PositionToTileX(Bomb.X)",
+						"tile-y": "Wall.PositionToTileY(Bomb.Y)",
+						"width": "3",
+						"height": "3"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Bomb",
+					"sid": 798999643161763
+				}
+			],
+			"sid": 613156576537398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 329938260003491,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Wall"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "erase-tile-range",
+					"objectClass": "Wall",
+					"sid": 421003273346086,
+					"parameters": {
+						"tile-x": "Wall.PositionToTileX(Bomb.X)",
+						"tile-y": "Wall.PositionToTileY(Bomb.Y)",
+						"width": "2",
+						"height": "2"
+					}
+				}
+			],
+			"sid": 522910289040330,
+			"disabled": true
+		}
+	],
+	"sid": 466251146063974
+}
